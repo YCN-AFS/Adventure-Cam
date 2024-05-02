@@ -1,46 +1,84 @@
-import cv2
-import mediapipe as mp
+# import re
+#
+# original_string = "map_0/Layer_1.png"
+# desired_number = 42
+#
+# # Replace the pattern "_\d+" (underscore followed by one or more digits)
+# # with the desired number
+# new_string = re.sub(r"Layer_\d+", f"Layer_{desired_number}", original_string)
+#
+# print(new_string)  # Output: map_42/Layer 1.png
 
-mp_drawing = mp.solutions.drawing_utils
-mp_pose = mp.solutions.pose
+# import os
+#
+# # Thay đổi đường dẫn thư mục theo ý muốn
+# directory = "assets/background/map_0"
+#
+# # Lấy danh sách các tệp trong thư mục
+# files = os.listdir(directory)
+# print(files)
+#
+# # In tên của mỗi tệp
+# for file in files:
+#     print(file)
 
-cap = cv2.VideoCapture(0)
-pose = mp_pose.Pose()
 
-while True:
-    success, image = cap.read()
-    if not success:
-        break
+# class Animal:
+#     def __init__(self):
+#         self.name = "Fox"
+#         self.color = "red"
+#     def changeColor(self):
+#         self.color = "Blue"
+#
+# class Pet(Animal):
+#     def __init__(self):
+#         super().__init__()  # Gọi phương thức khởi tạo của lớp cha
+#         # Cài đặt các thuộc tính khác của lớp Pet (nếu cần)
+#
+# # Tạo một đối tượng Pet
+# my_pet = Pet()
+# print(f"Tên của thú cưng là {my_pet.name}")
+# print(f"Màu lông của thú cưng là {my_pet.color}")
 
-    # Convert the image to RGB
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-    # Process the image
-    results = pose.process(image)
+# class Animal:
+#     def __init__(self):
+#         self.name = "Fox"
+#         self.color = "red"
+#
+# class Pet(Animal):
+#     def __init__(self):
+#         super().__init__()  # Gọi phương thức khởi tạo của lớp cha
+#         self.name = "Dog"  # Ghi đè thuộc tính name của lớp Animal
+#         def over_write(self):
+#             super().__init__()
+#             self.color = "Blue"
+#
+# # Tạo một đối tượng Pet
+# my_pet = Pet()
+# print(f"Tên của thú cưng là {my_pet.name}")  # In ra "Dog"
+# print(f"Màu lông của thú cưng là {my_pet.color}")  # In ra "red"
 
-    # Get the pose landmarks
-    pose_landmarks = results.pose_landmarks
+class Animal:
+    def __init__(self):
+        self.name = "Fox"
+        self.color = "red"
 
-    if pose_landmarks:
-        # Get the landmark corresponding to the left knee
-        left_knee = pose_landmarks.landmark[mp_pose.PoseLandmark.LEFT_KNEE]
+class Pet(Animal):
+    def __init__(self):
+        super().__init__()  # Gọi phương thức khởi tạo của lớp cha
+        self.name = "Dog"  # Ghi đè thuộc tính name của lớp Animal
 
-        # Get the x and y coordinates of the left knee
-        x = left_knee.x
-        y = left_knee.y
+    def over_write(self):
+        super().__init__()
+        self.color = "Blue"
 
-        # Get the z coordinate (depth) if available
-        z = left_knee.z if left_knee.HasField('z') else None
+# Tạo một đối tượng Pet
+my_pet = Pet()
+print(f"Tên của thú cưng là {my_pet.name}")
+print(f"Màu lông của thú cưng là {my_pet.color}")
 
-        # Do something with the left knee coordinates
-        print(f"Left Knee: x={x}, y={y}, z={z}")
+# Gọi phương thức over_write
+my_pet.over_write()
+print(f"Màu lông của thú cưng sau khi gọi phương thức over_write là {my_pet.color}")
 
-    # Display the image
-    cv2.imshow('Pose Detection', cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
-
-    # Exit on 'q' key press
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
-
-cap.release()
-cv2.destroyAllWindows()
