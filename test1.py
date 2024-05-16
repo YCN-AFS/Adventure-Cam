@@ -65,8 +65,6 @@ while cap.isOpened():
     if r < 20:
         count = 0
 
-
-
     cv2.putText(frame, str(count), (150, 250), cv2.FONT_HERSHEY_COMPLEX, 4, (0, 255, 0), 4)
 
     setp.clear()
