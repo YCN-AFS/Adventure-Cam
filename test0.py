@@ -59,26 +59,26 @@
 # print(f"Tên của thú cưng là {my_pet.name}")  # In ra "Dog"
 # print(f"Màu lông của thú cưng là {my_pet.color}")  # In ra "red"
 
-class Animal:
-    def __init__(self):
-        self.name = "Fox"
-        self.color = "red"
-
-class Pet(Animal):
-    def __init__(self):
-        super().__init__()  # Gọi phương thức khởi tạo của lớp cha
-        self.name = "Dog"  # Ghi đè thuộc tính name của lớp Animal
-
-    def over_write(self):
-        super().__init__()
-        self.color = "Blue"
-
-# Tạo một đối tượng Pet
-my_pet = Pet()
-print(f"Tên của thú cưng là {my_pet.name}")
-print(f"Màu lông của thú cưng là {my_pet.color}")
-
-# Gọi phương thức over_write
-my_pet.over_write()
-print(f"Màu lông của thú cưng sau khi gọi phương thức over_write là {my_pet.color}")
+# class Animal:
+#     def __init__(self):
+#         self.name = "Fox"
+#         self.color = "red"
+#
+# class Pet(Animal):
+#     def __init__(self):
+#         super().__init__()  # Gọi phương thức khởi tạo của lớp cha
+#         self.name = "Dog"  # Ghi đè thuộc tính name của lớp Animal
+#
+#     def over_write(self):
+#         super().__init__()
+#         self.color = "Blue"
+#
+# # Tạo một đối tượng Pet
+# my_pet = Pet()
+# print(f"Tên của thú cưng là {my_pet.name}")
+# print(f"Màu lông của thú cưng là {my_pet.color}")
+#
+# # Gọi phương thức over_write
+# my_pet.over_write()
+# print(f"Màu lông của thú cưng sau khi gọi phương thức over_write là {my_pet.color}")
 
