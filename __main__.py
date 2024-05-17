@@ -14,7 +14,7 @@ def check_action():
 
 # For webcam input:
 def main():
-    cap = cv2.VideoCapture("test.mp4")
+    cap = cv2.VideoCapture("control/test.mp4")
     with mp_pose.Pose(
         static_image_mode = False,
         min_detection_confidence=0.5,
