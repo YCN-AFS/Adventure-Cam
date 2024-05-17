@@ -82,3 +82,31 @@
 # my_pet.over_write()
 # print(f"Màu lông của thú cưng sau khi gọi phương thức over_write là {my_pet.color}")
 
+import mediapipe as mp
+
+# Initialize the Holistic solution
+mp_holistic = mp.solutions.holistic.Holistic()
+
+# Set the GPU options
+mp.start_run(options=[mp.gpu.get_gpu_options()])
+
+# Start the video capture
+cap = cv2.VideoCapture(0)
+
+while True:
+    # Read a frame from the video capture
+    success, image = cap.read()
+    if not success:
+        break
+
+    # Process the image with MediaPipe
+    results = mp_holistic.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+
+    # Display the processed image or perform further processing as needed
+    cv2.imshow('MediaPipe Holistic', image)
+
+    if cv2.waitKey(5) & 0xFF == 27:
+        break
+
+cap.release()
+cv2.destroyAllWindows()

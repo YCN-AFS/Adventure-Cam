@@ -4,197 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf07b941-671f-4231-a2c4-cd71835899b9" name="Changes" comment="Demo code">
-      <change afterPath="$PROJECT_DIR$/alagard.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font_test_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/RetroGaming.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test3.py" afterDir="false" />
+    <list default="true" id="bf07b941-671f-4231-a2c4-cd71835899b9" name="Changes" comment="Cập nhật lần 1">
+      <change afterPath="$PROJECT_DIR$/control_mechanism/control_mechanism.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Free Pixel Art Forest/PSD/Background.psd" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Free Pixel Art Forest/PSD/Background.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Free Pixel Art Forest/Preview/Background.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Free Pixel Art Forest/Preview/Background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Free Pixel Art Forest/You may also like/Pixel Art Forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Free Pixel Art Forest/You may also like/Pixel Art Forest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Free Pixel Art Forest/You may also like/Pixel Art Plataformer Painted Style.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Free Pixel Art Forest/You may also like/Pixel Art Plataformer Painted Style.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Free Pixel Art Forest/You may also like/Pixel Art Runner.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Free Pixel Art Forest/You may also like/Pixel Art Runner.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Free Pixel Art Forest/You may also like/Pixel Art Snowy Forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Free Pixel Art Forest/You may also like/Pixel Art Snowy Forest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Attack1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Attack1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Attack2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Attack2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Death.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Death.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Fall.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Fall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Idle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Jump.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Jump.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Run.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Run.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Take Hit - white silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Take Hit - white silhouette.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Martial Hero/Sprites/Take Hit.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Martial Hero/Sprites/Take Hit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Warrior/Contact.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Warrior/Contact.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Warrior/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Warrior/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Warrior/SpriteSheet/Warrior_SheetnoEffect.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/Warrior/SpriteSheet/Warrior_SheetnoEffect.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_0/Layer_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_0/Layer_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_1/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_1/back_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_1/middle.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_1/middle_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background/map_1/tiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/background/map_1/tiles_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Attack/Warrior_Attack_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Attack/Warrior_Attack_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Crouch/Warrior_Crouch_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Crouch/Warrior_Crouch_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Crouch/Warrior_Crouch_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Crouch/Warrior_Crouch_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Crouch/Warrior_Crouch_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Crouch/Warrior_Crouch_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Crouch/Warrior_Crouch_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Crouch/Warrior_Crouch_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Crouch/Warrior_Crouch_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Crouch/Warrior_Crouch_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Crouch/Warrior_Crouch_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Crouch/Warrior_Crouch_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash Attack/Warrior_Dash-Attack_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash-Attack_noDust/Warrior_Dash-Attack_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash/Warrior_Dash_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash/Warrior_Dash_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash/Warrior_Dash_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash/Warrior_Dash_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash/Warrior_Dash_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash/Warrior_Dash_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash/Warrior_Dash_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash/Warrior_Dash_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash/Warrior_Dash_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash/Warrior_Dash_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash/Warrior_Dash_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash/Warrior_Dash_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash/Warrior_Dash_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash/Warrior_Dash_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Dash_NoDust/Warrior_Dash_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Death-Effect/Warrior_Death_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Death-Effect/Warrior_Death_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/DeathnoEffect/Warrior_Death_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/DeathnoEffect/Warrior_Death_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Edge-Idle/Warrior_Edge-Idle_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/EdgeGrab/Warrior_Edge-Grab_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Fall/Warrior_Fall_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Fall/Warrior_Fall_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Fall/Warrior_Fall_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Fall/Warrior_Fall_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Fall/Warrior_Fall_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Fall/Warrior_Fall_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Hurt-Effect/Warrior_hurt_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/HurtnoEffect/Warrior_hurt_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Jump/Warrior_Jump_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Jump/Warrior_Jump_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Jump/Warrior_Jump_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Jump/Warrior_Jump_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Jump/Warrior_Jump_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Jump/Warrior_Jump_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Ladder-Grab/Warrior-Ladder-Grab_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Run/Warrior_Run_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Run/Warrior_Run_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Slide/Warrior-Slide_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Slide/Warrior-Slide_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Slide/Warrior-Slide_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Slide/Warrior-Slide_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Slide/Warrior-Slide_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Slide/Warrior-Slide_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Slide/Warrior-Slide_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Slide/Warrior-Slide_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Slide/Warrior-Slide_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Slide/Warrior-Slide_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/SlideNoEffect/Warrior-SlideNoEffect_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/UptoFall/Warrior_UptoFall_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/UptoFall/Warrior_UptoFall_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/UptoFall/Warrior_UptoFall_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/UptoFall/Warrior_UptoFall_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/WallSlide/Warrior_WallSlide_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/WallSlide/Warrior_WallSlide_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/WallSlide/Warrior_WallSlide_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/WallSlide/Warrior_WallSlide_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/WallSlide/Warrior_WallSlide_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/WallSlide/Warrior_WallSlide_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/WallSlide_NoDust/Warrior_WallSlide_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/WallSlide_NoDust/Warrior_WallSlide_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/WallSlide_NoDust/Warrior_WallSlide_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/WallSlide_NoDust/Warrior_WallSlide_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/WallSlide_NoDust/Warrior_WallSlide_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/WallSlide_NoDust/Warrior_WallSlide_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/Warrior_Sheet-Effect.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/Warrior_Sheet-Effect.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/idle/Warrior_Idle_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/idle/Warrior_Idle_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/idle/Warrior_Idle_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/idle/Warrior_Idle_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/idle/Warrior_Idle_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/idle/Warrior_Idle_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/idle/Warrior_Idle_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/idle/Warrior_Idle_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/idle/Warrior_Idle_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/idle/Warrior_Idle_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/characters/Warrior/idle/Warrior_Idle_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/characters/Warrior/idle/Warrior_Idle_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/game/assets/test.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/game_ball.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/game_objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/game/icon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test0.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test0.py" beforeDir="false" afterPath="$PROJECT_DIR$/test0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alagard.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/game/alagard.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font_test_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose.png" beforeDir="false" afterPath="$PROJECT_DIR$/control_mechanism/pose.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_landmarker_full.task" beforeDir="false" afterPath="$PROJECT_DIR$/control_mechanism/pose_landmarker_full.task" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/control_mechanism/test.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test0.py" beforeDir="false" afterPath="$PROJECT_DIR$/control_mechanism/test0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/control_mechanism/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +36,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -263,7 +90,7 @@
     &quot;Python.test3.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;game&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/foxcode/Documents/Projects/speech-to-text&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -274,18 +101,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="QodanaHighlightedReportService">
-    <option name="localRunNotPublishedPersistedInfo">
-      <LocalReportPersistedInfo>
-        <option name="path" value="C:\Users\foxcode\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
-        <option name="reportGuid" value="459ff2a9-f9f5-4f1e-a0d8-65fe596aa96d" />
-        <option name="reportName" value="Adventure_Cam/qodana/2024-05-16" />
-      </LocalReportPersistedInfo>
-    </option>
-  </component>
-  <component name="QodanaIsSelectedPersistenceService">
-    <option name="selectedOrLoading" value="true" />
-  </component>
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription localRun="true" path="C:\Users\foxcode\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="459ff2a9-f9f5-4f1e-a0d8-65fe596aa96d" reportId="Adventure_Cam/qodana/2024-05-16" />
@@ -369,7 +184,9 @@
       <workItem from="1715692976808" duration="25000" />
       <workItem from="1715791766863" duration="3001000" />
       <workItem from="1715841220156" duration="214000" />
-      <workItem from="1715841871428" duration="2403000" />
+      <workItem from="1715841871428" duration="6922000" />
+      <workItem from="1715870795615" duration="5444000" />
+      <workItem from="1715910319416" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="Demo code">
       <option name="closed" value="true" />
@@ -379,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714120269099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cập nhật lần 1">
+      <option name="closed" value="true" />
+      <created>1715845366225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715845366225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,11 +224,12 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Demo code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demo code" />
+    <MESSAGE value="Cập nhật lần 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cập nhật lần 1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Adventure_Cam$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1715845257744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Adventure_Cam$test0.coverage" NAME="test0 Coverage Results" MODIFIED="1714574572335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Adventure_Cam$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1715910368409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Adventure_Cam$test0.coverage" NAME="test0 Coverage Results" MODIFIED="1715878011447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Adventure_Cam$game_objects.coverage" NAME="game_objects Coverage Results" MODIFIED="1714747112729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Adventure_Cam$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1715844503477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Adventure_Cam$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1715651991851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
