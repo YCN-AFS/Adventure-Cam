@@ -1,0 +1,2 @@
+Ghi đè kho lưu trữ:
+git push --force origin <branch-name>
