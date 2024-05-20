@@ -11,6 +11,11 @@ mp_pose = mp.solutions.pose
 
 
 
+def running_workouts():
+    pass
+
+def put_text_on_image(image):
+    pass
 
 def calculation_angle(a, b, c):
     a = np.array(a) #First
@@ -64,6 +69,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, mod
             if angle < 30 and stage == "Down":
                 stage = "Up"
                 counter += 1
+
             cv2.putText(image, str(counter), (100, 100), cv2.FONT_HERSHEY_SIMPLEX,2, (255, 255, 255), 2, cv2.LINE_AA)
 
         except:
