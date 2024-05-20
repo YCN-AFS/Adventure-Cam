@@ -8,8 +8,7 @@ mp_pose = mp.solutions.pose
 
 
 
-cap = cv2.VideoCapture(0)
-cap.set(3, 640)
+
 
 
 
@@ -23,7 +22,13 @@ def calculation_angle(a, b, c):
         angle = 360 - angle
     return angle
 
-
+cap = cv2.VideoCapture(0)
+#Curl counter varibles
+counter = 0
+stage = None
+cap.set(3, 640)
+ret, frame = cap.read()
+width, height = frame.shape[0], frame.shape[1]
 
 with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, model_complexity=2) as pose:
     while cap.isOpened():
@@ -41,13 +46,33 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, mod
 
         try:
             landmarks = results.pose_landmarks.landmark
-            print(landmarks)
+
+            #Get coordinates
+            left_hip = [landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].x, landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].y]
+            left_shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x, landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y]
+            left_elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x, landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y]
+
+            #Calculation angle
+            angle = calculation_angle(left_hip, left_shoulder, left_elbow)
+            #Visulize angle
+            cv2.putText(image, str(round(angle, 2)), tuple(np.multiply(left_shoulder, (height, width)).astype(int)),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
+
+            #Curl counter logic
+            if angle > 160:
+                stage = "Down"
+            if angle < 30 and stage == "Down":
+                stage = "Up"
+                counter += 1
+            cv2.putText(image, str(counter), (100, 100), cv2.FONT_HERSHEY_SIMPLEX,2, (255, 255, 255), 2, cv2.LINE_AA)
+
         except:
-            print("Pass")
             pass
 
         #Render detections
         mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
+
+
 
 
 
