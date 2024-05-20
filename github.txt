@@ -1,2 +1,70 @@
 Ghi đè kho lưu trữ:
 git push --force origin <branch-name>
+
+git init: Khởi tạo một kho lưu trữ Git mới trong thư mục hiện tại.
+1. Khởi tạo kho lưu trữ:
+
+git init: Khởi tạo một kho lưu trữ Git mới trong thư mục hiện tại.
+2. Tạo bản sao kho lưu trữ:
+
+git clone <URL>: Tạo bản sao cục bộ của kho lưu trữ Git từ URL được cung cấp.
+3. Xem trạng thái kho lưu trữ:
+
+git status: Hiển thị trạng thái của các tệp tin trong kho lưu trữ, bao gồm các tệp tin đã thay đổi, được thêm mới và được xóa.
+4. Thêm tệp tin vào vùng dàn dựng:
+
+git add <tên tệp>: Thêm tệp tin được chỉ định vào vùng dàn dựng, là nơi lưu trữ các tệp tin sẽ được cam kết trong lần commit tiếp theo.
+git add .: Thêm tất cả các tệp tin đã thay đổi trong thư mục làm việc vào vùng dàn dựng.
+5. Cam kết thay đổi:
+
+git commit -m "Thông điệp commit": Ghi lại các thay đổi đã dàn dựng thành một commit mới với thông điệp commit được cung cấp.
+6. Xem lịch sử commit:
+
+git log: Hiển thị lịch sử commit của kho lưu trữ, bao gồm thông điệp commit, ID commit và tác giả.
+7. Thay đổi nhánh:
+
+git checkout <tên nhánh>: Chuyển sang nhánh được chỉ định.
+git branch: Hiển thị danh sách các nhánh trong kho lưu trữ.
+8. Tải lên thay đổi lên kho lưu trữ từ xa:
+
+git push origin <tên nhánh>: Tải lên các commit cục bộ của nhánh được chỉ định lên kho lưu trữ từ xa được đặt tên là origin.
+9. Tải xuống thay đổi từ kho lưu trữ từ xa:
+
+git pull origin <tên nhánh>: Tải xuống các thay đổi mới nhất từ kho lưu trữ từ xa được đặt tên là origin cho nhánh được chỉ định và sáp nhập chúng vào nhánh cục bộ hiện tại.
+10. Giải quyết xung đột hợp nhất:
+
+git merge: Sáp nhập các thay đổi từ một nhánh khác vào nhánh hiện tại. Nếu có xung đột hợp nhất, bạn sẽ cần giải quyết chúng thủ công.
+11. Tạo nhánh mới:
+
+git branch <tên nhánh>: Tạo một nhánh mới từ nhánh hiện tại.
+12. Xóa nhánh:
+
+git branch -d <tên nhánh>: Xóa nhánh được chỉ định.
+13. Đổi tên nhánh:
+
+git branch -m <tên nhánh cũ> <tên nhánh mới>: Đổi tên nhánh được chỉ định thành tên mới.
+14. Xem thông tin về nhánh hiện tại:
+
+git branch -v: Hiển thị thông tin về nhánh hiện tại, bao gồm tên nhánh, ID commit cuối cùng và trạng thái nhánh (ví dụ: hiện tại, theo dõi từ xa).
+15. Tìm kiếm lịch sử commit:
+
+git log -S <chuỗi tìm kiếm>: Tìm kiếm lịch sử commit cho các commit có chứa chuỗi tìm kiếm được chỉ định.
+16. Xem sự khác biệt giữa các commit:
+
+git diff <commit1> <commit2>: Hiển thị sự khác biệt giữa hai commit được chỉ định.
+17. Quay lại commit trước đó:
+
+git reset --hard <commit ID>: Quay lại commit có ID được chỉ định và xóa tất cả các commit sau đó.
+18. Hủy bỏ thay đổi chưa cam kết:
+
+git reset HEAD <tên tệp>: Hủy bỏ tất cả các thay đổi chưa cam kết cho tệp tin được chỉ định.
+git reset HEAD --hard: Hủy bỏ tất cả các thay đổi chưa cam kết trong thư mục làm việc.
+19. Tạo tệp tin ghim:
+
+git tag <tên thẻ> <commit ID>: Tạo tệp tin ghim cho commit có ID được chỉ định với tên được chỉ định.
+20. Xem danh sách tệp tin ghim:
+
+git tag: Hiển thị danh sách các tệp tin ghim trong kho lưu trữ.
+21. Xóa tệp tin ghim:
+
+git tag -d <tên thẻ>: Xóa tệp tin g

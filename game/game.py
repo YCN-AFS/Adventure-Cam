@@ -21,7 +21,7 @@ GRAVITY = 1
 
 # Set up
 pygame.init()
-icon = pygame.image.load('icon.ico')
+icon = pygame.image.load('../ninja_game/icon.ico')
 pygame.display.set_icon(icon)
 
 # os.environ['SDL_VIDEODRIVER'] = '1'
@@ -108,9 +108,6 @@ while running:
 
     pygame.display.flip()
 
-    # screen.blit(background, (0, 0))
-    #screen.blit(middleground, (0, 80))
-    # player.draw(screen)
-    # pygame.display.update()
+
 
 pygame.quit()

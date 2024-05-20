@@ -40,7 +40,7 @@ while running:
         ball_speed_y = -ball_speed_y  # Reverse vertical speed
 
     # Clear the screen
-    screen.fill(BLACK)
+    # screen.fill(BLACK)
 
     # Draw the ball
     pygame.draw.circle(screen, WHITE, (ball_x, ball_y), ball_radius)

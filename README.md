@@ -17,6 +17,9 @@
 - **Progress Tracking**: The app records workout progress and provides statistics.
 - **Community Connection**: Players can share achievements and participate in a fitness community.
 
+![FoxCode](https://i.ebayimg.com/images/g/kFEAAOSwYfxhFrUt/s-l1200.jpg "Employee Data title")
+ 
+
 ### Potential:
 - **New Versions**: Adventure Cam can be enhanced with new features.
 - **Gym Collaboration**: The app could partner with gyms to provide an improved user experience.
