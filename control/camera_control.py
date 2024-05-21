@@ -64,7 +64,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, mod
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
 
             #Curl counter logic
-            if angle > 160:
+            if angle > 150:
                 stage = "Down"
             if angle < 30 and stage == "Down":
                 stage = "Up"
@@ -77,11 +77,6 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, mod
 
         #Render detections
         mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-
-
-
-
-
         cv2.imshow('FoxCode', image)
         if cv2.waitKey(10) & 0xFF == ord('q'):
             break
