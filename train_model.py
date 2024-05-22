@@ -15,7 +15,7 @@ data_frame = pd.read_csv("cords.csv")
 x = data_frame.drop("class", axis=1)
 y = data_frame['class']
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=1234)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
 
 #Train model
 pieline = {
@@ -33,7 +33,7 @@ for algo, pipeline in pieline.items():
 
     print(algo, accuracy_score(y_test, yhat))
 
-with open('new_body_language.pkl', 'wb') as f:
+with open('action_game.pkl', 'wb') as f:
     pickle.dump(fit_models['rf'], f)
 
 

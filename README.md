@@ -10,7 +10,7 @@
 - **Stress Reduction**: The game makes workouts enjoyable and reduces stress.
 - **Building Exercise Habits**: Adventure Cam tracks progress and encourages consistent exercise habits.
 
-![Diem](https://www.dropbox.com/scl/fi/mycxjsk8sdjwqe4h71byu/fox.gif?rlkey=s4kqu59jlgtxrh4agui2upxpo&st=8uapktqj&dl=1 "Diem tesing")
+![Diem](image/diem.gif "Diem tesing")
 
 ### Features:
 - **Stunning Graphics**: An intuitive and visually appealing interface.
@@ -26,7 +26,7 @@
 - **New Versions**: Adventure Cam can be enhanced with new features.
 - **Gym Collaboration**: The app could partner with gyms to provide an improved user experience.
 - **Health Education**: Adventure Cam can serve as an educational tool for promoting community health.
-![Tai](https://www.dropbox.com/scl/fi/9yo0hfbjo3xrvbgd6vb0q/tai.gif?rlkey=hy92h6u2l96n9sw2dwqr1opkx&st=iya3rods&dl=1 "Diem tesing")
+![Tai](image/tai.gif "Tai tesing")
 
 ### Goal:
 Adventure Cam aims to provide a creative and effective workout solution, contributing to community health. 🏋️‍♂️🎮
