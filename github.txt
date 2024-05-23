@@ -3,7 +3,7 @@ git push --force origin <branch-name>
 
 git init: Khởi tạo một kho lưu trữ Git mới trong thư mục hiện tại.
 1. Khởi tạo kho lưu trữ:
-
+ 
 git init: Khởi tạo một kho lưu trữ Git mới trong thư mục hiện tại.
 2. Tạo bản sao kho lưu trữ:
 
@@ -12,7 +12,6 @@ git clone <URL>: Tạo bản sao cục bộ của kho lưu trữ Git từ URL đ
 
 git status: Hiển thị trạng thái của các tệp tin trong kho lưu trữ, bao gồm các tệp tin đã thay đổi, được thêm mới và được xóa.
 4. Thêm tệp tin vào vùng dàn dựng:
-
 git add <tên tệp>: Thêm tệp tin được chỉ định vào vùng dàn dựng, là nơi lưu trữ các tệp tin sẽ được cam kết trong lần commit tiếp theo.
 git add .: Thêm tất cả các tệp tin đã thay đổi trong thư mục làm việc vào vùng dàn dựng.
 5. Cam kết thay đổi:

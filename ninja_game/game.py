@@ -75,6 +75,25 @@ class Game:
         self.load_level(self.level)
         
         self.screenshake = 0
+
+
+    # def control_the_player(self, key_left = False, key_right = False):
+    #     if event.type == pygame.KEYDOWN:
+    #         if event.key == pygame.K_LEFT:
+    #             self.movement[0] = True
+    #         if event.key == pygame.K_RIGHT:
+    #             self.movement[1] = True
+    #         if event.key == pygame.K_UP:
+    #             if self.player.jump():
+    #                 self.sfx['jump'].play()
+    #         if event.key == pygame.K_x:
+    #             self.player.dash()
+    #     if event.type == pygame.KEYUP:
+    #         if event.key == pygame.K_LEFT:
+    #             self.movement[0] = False
+    #         if event.key == pygame.K_RIGHT:
+    #             self.movement[1] = False
+
         
     def load_level(self, map_id):
         self.tilemap.load('ninja_game/data/maps/' + str(map_id) + '.json')
@@ -227,5 +246,5 @@ class Game:
             pygame.display.update()
             self.clock.tick(60)
 
-
-Game().run()
+if __name__ == "__main__":
+    Game().run()

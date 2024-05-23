@@ -10,7 +10,7 @@ mp_holistic = mp.solutions.holistic
 mp_pose = mp.solutions.pose
 
 
-with open('action_game.pkl ', 'rb') as file:
+with open('new_body_language.pkl ', 'rb') as file:
     model = pickle.load(file)
 
 # columns = [(f'x{val}', f'y{val}', f'z{val}', f'v{val}') for val in range(1, 34)]
@@ -112,7 +112,7 @@ with mp_pose.Pose(min_detection_confidence=0.2, min_tracking_confidence=0.5, mod
         max_act = round(body_language_prob[ np.argmax(body_language_prob)], 2)
         if max_act > 0.4:
             cv2.putText(image, str(body_language_class), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 3)
-            cv2.putText(image, str(round(body_language_prob[ np.argmax(body_language_prob)], 2)), (200, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 3)
+            cv2.putText(image, str(round(body_language_prob[np.argmax(body_language_prob)], 2)), (200, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 3)
 
         cv2.imshow('FoxCode', image)
         if cv2.waitKey(1) & 0xFF == ord('q'):

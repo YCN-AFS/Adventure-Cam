@@ -10,7 +10,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_holistic = mp.solutions.holistic
 mp_pose = mp.solutions.pose
 
-
+FILE_NAME = "test0.csv"
 # def create_data_file(name, ):
 #     if first_time:
 #         with open('cords.csv', 'w', newline='') as csvfile:
@@ -28,7 +28,7 @@ cap.set(3, 640)
 ret, frame = cap.read()
 width, height = frame.shape[0], frame.shape[1]
 first_time = True
-class_name = "Stand"
+class_name = "Run"
 
 with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, model_complexity=2) as pose:
     while cap.isOpened():
@@ -64,12 +64,12 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, mod
 
             # Create file csv
             if first_time:
-                with open('cords.csv', 'w', newline='') as csvfile:
+                with open(FILE_NAME, 'w', newline='') as csvfile:
                     writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                     writer.writerow(mark)
                 first_time = False
             else:
-                with open('cords.csv', 'a', newline='') as csvfile:
+                with open(FILE_NAME, 'a', newline='') as csvfile:
                     writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                     writer.writerow(pose_row)
 
