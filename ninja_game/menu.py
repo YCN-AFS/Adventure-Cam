@@ -1,19 +1,19 @@
 import pygame
 import sys
-import os
-
 
 # Khởi tạo Pygame
 pygame.init()
 
 # Kích thước màn hình
-os.environ['SDL_VIDEODRIVER'] = '1'
-info = pygame.display.Info()
+screen_width = 700
+screen_height = 700
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("MENU GAME")
 
-GAME_WIDTH, GAME_HEIGHT = info.current_w, info.current_h
-screen = pygame.display.set_mode((GAME_WIDTH-10, GAME_HEIGHT-50), pygame.RESIZABLE)
-
-pygame.display.set_caption("Advan")
+# Load hình ảnh nền
+background_image = pygame.image.load(
+    "./data/images/background.png")
+background_image = pygame.transform.scale(background_image, (screen_width, screen_height))
 
 # Định nghĩa màu sắc
 white = (255, 255, 255)
@@ -25,7 +25,20 @@ bright_green = (100, 255, 100)
 bright_black = (100, 100, 100)
 
 # Định nghĩa phông chữ
-font = pygame.font.Font('../ninja_game/RetroGaming.ttf', 60)
+font = pygame.font.Font('RetroGaming.ttf', 60)
+
+# Định nghĩa các hàm để hiển thị text
+def text_objects(text, font):
+    text_surface = font.render(text, True, white)
+    return text_surface, text_surface.get_rect()
+
+def message_display_top(text, y_displace=0, font_size='large'):
+    if font_size == 'large':
+        text_surface, text_rect = text_objects(text, font)
+    elif font_size == 'small':
+        text_surface, text_rect = text_objects(text, smallfont)
+    text_rect.midtop = (screen_width / 2, y_displace)
+    screen.blit(text_surface, text_rect)    
 
 # Tạo các nút
 class Button:
@@ -51,12 +64,10 @@ class Button:
         return self.clicked
 
 # Tạo các nút
-# rectangle =  pygame.Rect(0, GAME_WIDTH, )
-start_button = Button("Start", GAME_WIDTH/2.3, 150, 300, 100, red, bright_red)
-options_button = Button("Options", GAME_WIDTH/2.3, 300, 300, 100, green, bright_green)
-quit_button = Button("Quit", GAME_WIDTH/2.3, 450, 300, 100, black, bright_black)
+start_button = Button("Start", 200, 150, 300, 100, red, bright_red)
+options_button = Button("Options", 200, 300, 300, 100, green, bright_green)
+quit_button = Button("Quit", 200, 450, 300, 100, black, bright_black)
 buttons = [start_button, options_button, quit_button]
-
 
 # Vòng lặp chính
 running = True
@@ -75,15 +86,18 @@ while running:
                     if button.is_hovered():
                         if button.text == "Start":
                             print("Start button clicked")
-                            Game.run()
-                            break
                         elif button.text == "Options":
                             print("Options button clicked")
                         elif button.text == "Quit":
                             print("Quit button clicked")
                             running = False
 
-    screen.fill(white)
+     # Hiển thị hình nền
+        screen.blit(background_image, (0, 0))
+
+     # Hiển thị tiêu đề game
+        nav_height = 30  # Chiều cao của thanh điều hướng (navigation bar)
+        message_display_top("Ninja Game", nav_height + 10, 'large') 
 
     for button in buttons:
         if button.clicked or button.is_hovered():
@@ -91,6 +105,7 @@ while running:
         else:
             button.current_color = button.color
         button.draw(screen)
+
     pygame.display.flip()
 
 pygame.quit()
