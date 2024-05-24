@@ -94,6 +94,27 @@ class Game:
     #         if event.key == pygame.K_RIGHT:
     #             self.movement[1] = False
 
+    def listen_key_events(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
+                    self.movement[0] = True
+                if event.key == pygame.K_RIGHT:
+                    self.movement[1] = True
+                if event.key == pygame.K_UP:
+                    if self.player.jump():
+                        self.sfx['jump'].play()
+                if event.key == pygame.K_x:
+                    self.player.dash()
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_LEFT:
+                    self.movement[0] = False
+                if event.key == pygame.K_RIGHT:
+                    self.movement[1] = False
+
         
     def load_level(self, map_id):
         self.tilemap.load('ninja_game/data/maps/' + str(map_id) + '.json')
@@ -212,26 +233,27 @@ class Game:
                     particle.pos[0] += math.sin(particle.animation.frame * 0.035) * 0.3
                 if kill:
                     self.particles.remove(particle)
-            
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_LEFT:
-                        self.movement[0] = True
-                    if event.key == pygame.K_RIGHT:
-                        self.movement[1] = True
-                    if event.key == pygame.K_UP:
-                        if self.player.jump():
-                            self.sfx['jump'].play()
-                    if event.key == pygame.K_x:
-                        self.player.dash()
-                if event.type == pygame.KEYUP:
-                    if event.key == pygame.K_LEFT:
-                        self.movement[0] = False
-                    if event.key == pygame.K_RIGHT:
-                        self.movement[1] = False
+
+            self.listen_key_events()
+            # for event in pygame.event.get():
+            #     if event.type == pygame.QUIT:
+            #         pygame.quit()
+            #         sys.exit()
+            #     if event.type == pygame.KEYDOWN:
+            #         if event.key == pygame.K_LEFT:
+            #             self.movement[0] = True
+            #         if event.key == pygame.K_RIGHT:
+            #             self.movement[1] = True
+            #         if event.key == pygame.K_UP:
+            #             if self.player.jump():
+            #                 self.sfx['jump'].play()
+            #         if event.key == pygame.K_x:
+            #             self.player.dash()
+            #     if event.type == pygame.KEYUP:
+            #         if event.key == pygame.K_LEFT:
+            #             self.movement[0] = False
+            #         if event.key == pygame.K_RIGHT:
+            #             self.movement[1] = False
                         
             if self.transition:
                 transition_surf = pygame.Surface(self.display.get_size())

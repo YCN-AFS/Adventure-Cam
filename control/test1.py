@@ -6,7 +6,6 @@ from pynput.keyboard import Key, Controller
 keyboard = Controller()
 
 
-
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(max_num_faces=1, min_detection_confidence=0.4, min_tracking_confidence=0.4)
 mp_drawing_styles = mp.solutions.drawing_styles
@@ -85,8 +84,6 @@ while cap.isOpened():
             elif y > 15:
                 keyboard.press(Key.right)
                 keyboard.release(Key.right)
-
-
 
             # Display nose direction
             noce_3d_projection, jacobian = cv2.projectPoints(nose_3d, rot_vec, trans_vec, cam_matrix, dist_matrix)
