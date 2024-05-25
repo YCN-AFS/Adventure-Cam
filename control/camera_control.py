@@ -6,18 +6,6 @@ import numpy as np
 #https://youtu.be/06TE_U21FK4?si=luKRS0RghSJ4V6AF&t=1495
 
 
-def calculation_angle(a, b, c):
-    a = np.array(a) #First
-    b = np.array(b) #Mid
-    c = np.array(c) #End
-    radians = np.arctan2(c[1]-b[1], c[0]-b[0]) - np.arctan2(a[1] - b[1], a[0] - b[0])
-    angle = np.abs(radians * 180 / np.pi)
-    if angle > 180:
-        angle = 360 - angle
-    return angle
-
-
-
 class ReceiveAction:
     def __init__(self):
         self.cap = cv2.VideoCapture(0)
@@ -27,7 +15,11 @@ class ReceiveAction:
         self.mp_pose = mp.solutions.pose
         self.cap.set(3, 640)
         _, self.frame = self.cap.read()
+        self.character_control = [False, False]
         self.width, self.height = self.frame.shape[0], self.frame.shape[1]
+
+        # self.character_control = self.character_control
+        self.previous_character_control = None
 
     def get_angle(self, landmark1, landmark2, landmark3):
         """
@@ -48,10 +40,20 @@ class ReceiveAction:
 
         angle = dot_product / magnitudes
         angle = math.acos(angle)
+        return angle
 
+    def calculation_angle(self, a, b, c):
+        a = np.array(a)  # First
+        b = np.array(b)  # Mid
+        c = np.array(c)  # End
+        radians = np.arctan2(c[1] - b[1], c[0] - b[0]) - np.arctan2(a[1] - b[1], a[0] - b[0])
+        angle = np.abs(radians * 180 / np.pi)
+        if angle > 180:
+            angle = 360 - angle
         return angle
 
     def player_direction_view(self, results, image):
+
         self.mp_drawing.draw_landmarks(image, results.pose_landmarks, self.mp_pose.POSE_CONNECTIONS)
 
         left_eye = results.pose_landmarks.landmark[self.mp_pose.PoseLandmark.LEFT_EYE]
@@ -65,13 +67,22 @@ class ReceiveAction:
         right_eye_angle = self.get_angle((nose_tip_x, nose_tip_y), (right_eye_x, right_eye_y), (left_eye_x, left_eye_y))
 
         # Logic determines the direction of view
-        if abs(left_eye_angle - right_eye_angle) < 0.25:
 
-            cv2.putText(image, "Look straight ahead", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        # if self.previous_character_control != self.character_control:
+
+        if abs(left_eye_angle - right_eye_angle) < 0.25:
+            # cv2.putText(image, "Look straight ahead", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            self.character_control = [False, False]
         elif left_eye_angle > right_eye_angle:
-            cv2.putText(image, "Looking Left", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            # cv2.putText(image, "Looking Left", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            self.character_control = [True, False]
         else:
-            cv2.putText(image, "Looking Right", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            # cv2.putText(image, "Looking Right", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            self.character_control = [False, True]
+
+
+        # self.previous_character_control = self.character_control
+        # print(self.previous_character_control, self.character_control)
 
 
 
@@ -84,15 +95,12 @@ class ReceiveAction:
         left_elbow = [landmarks[self.mp_pose.PoseLandmark.LEFT_ELBOW.value].x, landmarks[self.mp_pose.PoseLandmark.LEFT_ELBOW.value].y]
 
         # Calculation angle
-        angle = calculation_angle(left_hip, left_shoulder, left_elbow)
+        angle = self.calculation_angle(left_hip, left_shoulder, left_elbow)
 
         # Visulize angle
         cv2.putText(image, str(round(angle, 2)), tuple(np.multiply(left_shoulder, (self.height, self.width)).astype(int)),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
-
         return angle
-
-
 
     def Run_the_process(self):
         pose = self.mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, model_complexity=1)
@@ -106,7 +114,6 @@ class ReceiveAction:
             results = pose.process(image)
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-
             try:
                 angle = self.process_frame(results, image)
                 self.player_direction_view(results, image)
@@ -120,10 +127,13 @@ class ReceiveAction:
                 self.stage = "Up"
                 self.counter += 1
 
+            # print(self.character_control)
+
             self.mp_drawing.draw_landmarks(image, results.pose_landmarks, self.mp_pose.POSE_CONNECTIONS)
             cv2.putText(image, str(self.counter), (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2,
                         cv2.LINE_AA)
             cv2.imshow('FoxCode', image)
+
 
             if cv2.waitKey(10) & 0xFF == ord('q'):
                 break

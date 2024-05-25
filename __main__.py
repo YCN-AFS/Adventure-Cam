@@ -1,34 +1,36 @@
-from ninja_game.game import Game
-from control.camera_control import ReceiveAction
-import threading
 import time
+from ninja_game.game import Game
 
-move = None
 
 def game_theard():
-    global move
+    global game
     game = Game()
-    move = game.movement
-    print(1)
     game.run()
-    print(2)
+
+def update_thread():
+    while True:
+        time.sleep(0.2)
+        game.movement = test.character_control
+        print(test.character_control)
 
 
 def keyboard_theard():
+    global test
     test = ReceiveAction()
+    game.movement = test.character_control
     test.Run_the_process()
-    pass
-
-
-thread1 = threading.Thread(target=game_theard)
-thread2 = threading.Thread(target=keyboard_theard, daemon=True)
 
 
 if __name__ == '__main__':
-    thread1.start()
-    thread2.start()
-    # for i in range(100):
-    #     time.sleep(0.6)
-    #     print(move)
-    # thread1.join()
-    # thread2.join()
+    from control.camera_control import ReceiveAction
+    import threading
+
+
+    threading.Thread(target=game_theard).start()
+    threading.Thread(target=keyboard_theard, daemon=True).start()
+    threading.Thread(target=update_thread, daemon=True).start()
+
+
+
+
+

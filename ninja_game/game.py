@@ -3,6 +3,8 @@ import sys
 import math
 import random
 
+
+
 import pygame
 
 from .scripts.utils import load_image, load_images, Animation
@@ -21,6 +23,7 @@ class Game:
         pygame.display.set_caption('Adventure Cam')
         icon = pygame.image.load('ninja_game/icon.ico')
         pygame.display.set_icon(icon)
+
 
         self.screen = pygame.display.set_mode((GAME_WIDTH-10, GAME_HEIGHT-50), pygame.RESIZABLE)
         self.display = pygame.Surface((320, 240), pygame.SRCALPHA)
@@ -76,23 +79,11 @@ class Game:
         
         self.screenshake = 0
 
+    def update_movement(self, input_data = [False, False]):
+        self.movement = input_data
 
-    # def control_the_player(self, key_left = False, key_right = False):
-    #     if event.type == pygame.KEYDOWN:
-    #         if event.key == pygame.K_LEFT:
-    #             self.movement[0] = True
-    #         if event.key == pygame.K_RIGHT:
-    #             self.movement[1] = True
-    #         if event.key == pygame.K_UP:
-    #             if self.player.jump():
-    #                 self.sfx['jump'].play()
-    #         if event.key == pygame.K_x:
-    #             self.player.dash()
-    #     if event.type == pygame.KEYUP:
-    #         if event.key == pygame.K_LEFT:
-    #             self.movement[0] = False
-    #         if event.key == pygame.K_RIGHT:
-    #             self.movement[1] = False
+
+
 
     def listen_key_events(self):
         for event in pygame.event.get():
@@ -115,10 +106,9 @@ class Game:
                 if event.key == pygame.K_RIGHT:
                     self.movement[1] = False
 
-        
+
     def load_level(self, map_id):
         self.tilemap.load('ninja_game/data/maps/' + str(map_id) + '.json')
-        
         self.leaf_spawners = []
         for tree in self.tilemap.extract([('large_decor', 2)], keep=True):
             self.leaf_spawners.append(pygame.Rect(4 + tree['pos'][0], 4 + tree['pos'][1], 23, 13))
@@ -235,6 +225,7 @@ class Game:
                     self.particles.remove(particle)
 
             self.listen_key_events()
+
             # for event in pygame.event.get():
             #     if event.type == pygame.QUIT:
             #         pygame.quit()
@@ -254,6 +245,8 @@ class Game:
             #             self.movement[0] = False
             #         if event.key == pygame.K_RIGHT:
             #             self.movement[1] = False
+
+
                         
             if self.transition:
                 transition_surf = pygame.Surface(self.display.get_size())
